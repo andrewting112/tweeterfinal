@@ -1,0 +1,100 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+
+
+@media (min-width: 1024px) {
+  #top-header {
+    position: fixed;
+    z-index: 10000;
+  }
+
+  .sectional {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #avatarheader {
+    margin-right: 200px;
+    height: 100%;
+    width: 50%;
+    margin: 2%;
+    z-index: 1000;
+  }
+
+
+  #write {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+  }
+
+
+
+  .box {
+    margin-right: 100px;
+    margin-left: 100px;
+
+  }
+
+}
+
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+nav {
+  font-family: 'Bungee', cursive;
+
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f4f1ec;
+  margin-left: 30px;
+  margin-right: 70px;
+}
+
+#tweetbutton {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#textcounter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -3.5%;
+}
+
+.errormessage {
+  display: none;
+  padding: 5%;
+  width: 70%;
+  padding-left: 180px;
+}
+
+.errormessage text {
+  display: flex;
+  justify-content: center;
+  color: red
+}
+

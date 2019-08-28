@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:700i&display=swap" rel="stylesheet">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- External JS -->
+  <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/app.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <!-- Top nav bar (fixed) -->
+  <nav id="topheader">
+    <span class="navbar-left">tweeter</span>
+
+    <span id="write" class="navbar-right">write a tweet! <i class="fas fa-chevron-down"> </i></span>
+
+
+  </nav>
+  <div class="sectional">
+    <header id="avatarheader">
+      <img class="image" src="/images/profile-hex.png">
+
+      <br>
+
+      <div>
+        <h2 class="profile-name">Your Name </h2>
+      </div>
+
+    </header>
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <div class="errormessage">
+          <text>No text or text too long! Please change your input length. </text>
+        </div>
+        <h2>Compose Tweet</h2>
+
+        <form id="compose" method="POST" action="/tweets/" id="new-post">
+          <textarea id="textinput" name="text" placeholder="What are you humming about?"></textarea>
+          <span>
+            <input id="tweetbutton" type="submit" value="Tweet">
+            <span id="textcounter" class="counter">140</span>
+          </span>
+        </form>
+      </section>
+
+      <br>
+
+      <div id="tweetsContainer">
+        <div class="tweets-container">
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+
+</html>

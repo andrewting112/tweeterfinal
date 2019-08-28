@@ -1,0 +1,17 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: orange;
+
+}
+
+.profile-name {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}

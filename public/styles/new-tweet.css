@@ -1,0 +1,110 @@
+new-tweet {
+  background-color: transparent;
+  color: #eeeeee;
+  border-bottom: solid #eeeeee 1px;
+  padding: 3px 10px;
+}
+
+.new-tweet h2 {
+  color: blue;
+  font-family: "Bungee", "cursive", "sans-serif";
+
+}
+
+.new-tweet textarea {
+  width: 100%;
+  background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  color: black;
+
+}
+
+.tweet {}
+
+.tweet img {
+  margin-top: 7px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+
+.box {
+  border: 2px solid black;
+}
+
+.tweets-container {
+  display: flex;
+  background-color: rgba(158, 158, 158, 0.13);
+  justify-content: space-between;
+  ;
+  height: 70px;
+
+}
+
+.tweets-container p {
+  font-size: 1.2em;
+  color: #6b6c6f;
+  margin: auto;
+  width: 200px;
+}
+
+.input {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.1em;
+  margin-left: 15px;
+  margin-top: 35px;
+}
+
+hr {
+  display: block;
+  border-top: 2px solid #ccc;
+}
+
+.buttons {
+  height: 5px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.date {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  height: 30px;
+}
+
+.box:hover {
+  border: 2px solid;
+  padding: 10px;
+  box-shadow: 3px 7px #888888;
+  display: block;
+
+}
+
+#hoverButton {
+  margin-right: 20px;
+}
+
+#handle {
+  margin-right: 17px;
+  margin-top: 10px;
+
+}
+
+#box #hoverButton {
+  display: none;
+  
+  
+}
+
+#box:hover #hoverButton{
+  display: flex;
+  justify-content: flex-end;
+}
+
+

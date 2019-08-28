@@ -1,0 +1,18 @@
+nav {
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  background-color: #4056A1;
+  height: 120px;
+  z-index: auto;
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-left {
+  float: left;
+}
